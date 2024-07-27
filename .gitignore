@@ -1,2 +1,4 @@
 /target
 info.txt
+/nodejs_ws_ping_test/node_modules/*
+/nodejs_ws_ping_test/package-lock.json
