@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>WebSocket Ping Test</title>
+    <script type="module">
+        import init, { ws_ping } from './pkg/ws_ping.js';
+
+        async function run() {
+            await init();
+
+            try {
+                const response = await ws_ping('ws://echo.websocket.org', 'Hello, WebSocket!');
+                console.log('Received:', response);
+            } catch (err) {
+                console.error('Error:', err);
+            }
+        }
+
+        run();
+    </script>
+</head>
+
+<body>
+    <h1>WebSocket Ping Test</h1>
+    <p>Check the console for the result.</p>
+</body>
+
+</html>
