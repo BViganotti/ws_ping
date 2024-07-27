@@ -1,4 +1,4 @@
-Compile with wasm-pack build --target web
+Compile with: "wasm-pack build --target web"
 
 Once compiled run: "npx http-server" to serve index.html
 
